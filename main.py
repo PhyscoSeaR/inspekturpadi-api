@@ -10,7 +10,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 
 
-model = tf.keras.models.load_model('model/model2.h5')
+model = tf.keras.models.load_model('model2.h5')
 
 def prepare_image(img):
     img = Image.open(io.BytesIO(img))
